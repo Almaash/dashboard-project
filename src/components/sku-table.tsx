@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/table";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ArrowUpDown } from "lucide-react";
+import { ChevronDown, ArrowUpDown, LineChart } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -63,8 +63,8 @@ export default function SKUDashboard({ skuStats, heading }: any) {
             <TableRow>
               <TableHead className="w-[250px] border-0">
                 <div className="flex items-center">
-                  <ArrowUpDown className="mr-2 h-4 w-4" />
-                  SKU Name
+                <LineChart className="w-4 h-4 mr-2" />
+                SKU Name
                 </div>
               </TableHead>
               <TableHead
