@@ -1,5 +1,4 @@
 import React from 'react';
-// import useCubeQuery from '../hooks/useCubeQuery';
 import { 
   LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, 
   PieChart, Pie, Cell 
@@ -7,6 +6,7 @@ import {
 import { useTable, Column } from 'react-table';
 import useCubeQuery from '@/hooks/useCubeQuery';
 
+// Define the props for the Card component
 interface CardProps {
   title: string;
   visualizationType: 'linechart' | 'semipiechart' | 'table';
@@ -14,13 +14,17 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ title, visualizationType, query }) => {
+  // Fetch data using the custom Cube query hook
   const { loading, data, error } = useCubeQuery(query);
 
+  // Handle loading and error states
   if (loading) return <div>Loading {title}...</div>;
   if (error) return <div>Error loading {title}</div>;
 
+  // Extract chart data from API response
   const chartData: Record<string, any>[] = data?.chartPivot ? data.chartPivot() : [];
 
+  // Render a line chart if visualizationType is 'linechart'
   if (visualizationType === 'linechart') {
     return (
       <div className="card">
@@ -36,13 +40,15 @@ const Card: React.FC<CardProps> = ({ title, visualizationType, query }) => {
     );
   }
 
+  // Render a semi pie chart if visualizationType is 'semipiechart'
   if (visualizationType === 'semipiechart') {
     return (
       <div className="card">
         <h3>{title}</h3>
         <PieChart width={300} height={200}>
           <Pie data={chartData} dataKey="y" nameKey="x" cx="50%" cy="50%" outerRadius={80} fill="#82ca9d">
-            {chartData.map(( index:any) => (
+            {/* Dynamically assign colors to pie chart slices */}
+            {chartData.map((_, index) => (
               <Cell 
                 key={`cell-${index}`} 
                 fill={["#0088FE", "#00C49F", "#FFBB28", "#FF8042"][index % 4]} 
@@ -55,12 +61,15 @@ const Card: React.FC<CardProps> = ({ title, visualizationType, query }) => {
     );
   }
 
+  // Render a table if visualizationType is 'table'
   if (visualizationType === 'table') {
+    // Define table columns based on chart data keys
     const columns: Column<Record<string, any>>[] = Object.keys(chartData[0] || {}).map((key) => ({
       Header: key,
       accessor: key,
     }));
 
+    // Initialize table instance using react-table
     const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({
       columns,
       data: chartData,
@@ -96,6 +105,7 @@ const Card: React.FC<CardProps> = ({ title, visualizationType, query }) => {
     );
   }
 
+  // Return null if visualizationType does not match any case
   return null;
 };
 
