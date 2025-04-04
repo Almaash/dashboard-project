@@ -60,9 +60,6 @@ export default function Dashboard() {
       fetchConfig();
     }, []);
 
-    
-
-   
   return (
     <div className="flex h-screen w-screen bg-background">
       <Sidebar />
@@ -70,7 +67,6 @@ export default function Dashboard() {
         <div className="w-full h-full p-4">
           <div className=" border rounded-t-lg flex-col bg-[#fafafa]">
             <CommerceHeader />
-
             <MetricsCards chartData={chartData} cityData={cityData}/>
             <SkuTable skuStats={skuData} heading={"SKU"} />
             <SkuTable skuStats={cityLevelData} heading={"City"} />
