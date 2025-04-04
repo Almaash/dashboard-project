@@ -32,9 +32,7 @@ export function CommerceHeader() {
           </div>
 
           <Button variant="outline" size="sm" className="h-8 gap-1 text-xs">
-            {/* <CalendarIcon className="h-3.5 w-3.5" /> */}
             <span>Aug 01, 2024 - Aug 03, 2024</span>
-            {/* <ChevronDown className="h-3.5 w-3.5" /> */}
           </Button>
         </div>
       </div>
