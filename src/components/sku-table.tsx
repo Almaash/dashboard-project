@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/table";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ArrowUpDown, LineChart } from "lucide-react";
+import { ChevronDown, LineChart } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
