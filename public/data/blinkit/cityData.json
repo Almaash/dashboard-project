@@ -1,0 +1,35 @@
+{
+    "totalValue": 68.2,
+    "totalChange": 2.2,
+    "cities": [
+      {
+        "name": "New Delhi",
+        "value": 26.5,
+        "percentage": 35,
+        "change": 1.2,
+        "color": "#6366f1"
+      },
+      {
+        "name": "Mumbai",
+        "value": 36.4,
+        "percentage": 23,
+        "change": -3.3,
+        "color": "#f87171"
+      },
+      {
+        "name": "West Bengal",
+        "value": 12.2,
+        "percentage": 21,
+        "change": -2.3,
+        "color": "#fbbf24"
+      },
+      {
+        "name": "Others",
+        "value": 24.3,
+        "percentage": 9,
+        "change": 1.09,
+        "color": "#d1d5db"
+      }
+    ]
+  }
+  

@@ -1,0 +1,79 @@
+{
+    "data": [
+      {
+        "id": "delhi",
+        "name": "Delhi",
+        "sales": "₹93,132.12",
+        "outOfStock": "1.68%",
+        "outOfStockPercent": 1.68,
+        "totalInventory": 931.9,
+        "averageRank": 3.2,
+        "estTraffic": "12,303",
+        "estImpressions": "25,005",
+        "ctr": "1.9",
+        "change": "↑ 2.4%"
+      },
+      {
+        "id": "bengaluru",
+        "name": "Bengaluru",
+        "sales": "₹8,526.32",
+        "outOfStock": "6.79%",
+        "outOfStockPercent": 6.79,
+        "totalInventory": 679,
+        "averageRank": 7,
+        "estTraffic": "3,005",
+        "estImpressions": "4,231",
+        "ctr": "-",
+        "change": "↑ 2.4%"
+      },
+      {
+        "id": "bengaluru-2",
+        "name": "Bengaluru 2",
+        "sales": "₹7,012.72",
+        "outOfStock": "3.28%",
+        "outOfStockPercent": 3.28,
+        "totalInventory": 328,
+        "averageRank": 4,
+        "estTraffic": "2,960",
+        "estImpressions": "3,657",
+        "ctr": "-",
+        "change": "↑ 2.4%"
+      },
+      {
+        "id": "sku-3",
+        "name": "SKU 3",
+        "sales": "₹9313",
+        "outOfStock": "1.68%",
+        "outOfStockPercent": 1.68,
+        "totalInventory": 931.9,
+        "averageRank": 11,
+        "estTraffic": "1931.9",
+        "estImpressions": "₹931.9",
+        "ctr": "1.9",
+        "change": "-"
+      },
+      {
+        "id": "sku-4",
+        "name": "SKU 4",
+        "sales": "₹0",
+        "outOfStock": "0",
+        "outOfStockPercent": 0,
+        "totalInventory": 0,
+        "averageRank": 0,
+        "estTraffic": "₹0",
+        "estImpressions": "₹0",
+        "ctr": "0.0",
+        "change": "-"
+      }
+    ],
+    "totals": {
+      "sales": "₹2,93,132.12",
+      "outOfStock": "16%",
+      "totalInventory": 2931,
+      "averageRank": 8.3,
+      "estTraffic": "61,985",
+      "estImpressions": "2,61,768",
+      "ctr": "1.9"
+    }
+  }
+  

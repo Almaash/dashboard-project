@@ -1,0 +1,66 @@
+{
+    "data": [
+      {
+        "id": "protein-bar",
+        "name": "Protein Bar 100g",
+        "sales": "₹93,132.12",
+        "outOfStock": "1.68%",
+        "outOfStockPercent": 1.68,
+        "totalInventory": 931.9,
+        "averageRank": 3.2,
+        "estTraffic": "12,303",
+        "estImpressions": "25,005",
+        "ctr": "1.5",
+        "change": 1.4
+      },
+      {
+        "id": "choco-bar",
+        "name": "Choco Bar 100g",
+        "sales": "₹73,182.12",
+        "outOfStock": "2.68%",
+        "outOfStockPercent": 2.68,
+        "totalInventory": 931.9,
+        "averageRank": 2.2,
+        "estTraffic": "10,303",
+        "estImpressions": "15,005",
+        "ctr": "1.5",
+        "change": 3.4
+      },
+      {
+        "id": "sku-3",
+        "name": "SKU 3",
+        "sales": "₹9313",
+        "outOfStock": "1.68%",
+        "outOfStockPercent": 1.68,
+        "totalInventory": 931.9,
+        "averageRank": 11,
+        "estTraffic": "1931.9",
+        "estImpressions": "₹931.9",
+        "ctr": "1.5",
+        "change": 3.0
+      },
+      {
+        "id": "sku-4",
+        "name": "SKU 4",
+        "sales": "₹0",
+        "outOfStock": "0",
+        "outOfStockPercent": 0,
+        "totalInventory": 0,
+        "averageRank": 0,
+        "estTraffic": "₹0",
+        "estImpressions": "₹0",
+        "ctr": "0.0",
+        "change": 2.8
+      }
+    ],
+    "totals": {
+      "sales": "₹2,93,132.12",
+      "outOfStock": "16%",
+      "totalInventory": 2931,
+      "averageRank": 8.3,
+      "estTraffic": "61,985",
+      "estImpressions": "2,61,768",
+      "ctr": "1.5"
+    }
+  }
+  
